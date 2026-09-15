@@ -13,14 +13,11 @@
             --text-main: #1e293b;
             --text-muted: #64748b;
             --border-color: #cbd5e1;
-            
             --reading-bg: #f0fdf4;
             --reading-border: #16a34a;
-            
             --correct-bg: #dcfce7;
             --correct-text: #15803d;
             --correct-border: #4ade80;
-            
             --incorrect-bg: #ffe4e6;
             --incorrect-text: #be123c;
             --incorrect-border: #fb7185;
@@ -43,7 +40,8 @@
             backdrop-filter: blur(10px);
             padding: 40px;
             border-radius: 24px;
-            box-shadow: 0 20px 35px -10px rgba(79, 70, 229, 0.15), 0 10px 15px -5px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 20px 35px -10px rgba(79, 70, 229, 0.15),
+                        0 10px 15px -5px rgba(0, 0, 0, 0.05);
             border: 3px solid #ffffff;
         }
 
@@ -65,7 +63,6 @@
             font-weight: 700;
             font-size: 1.1em;
             background: #f1f5f9;
-            display: inline-block;
             padding: 6px 18px;
             border-radius: 30px;
             margin-left: auto;
@@ -231,11 +228,6 @@
         .btn-check:hover {
             background: linear-gradient(135deg, #0284c7, #1d4ed8);
             transform: translateY(-2px);
-            box-shadow: 0 6px 16px rgba(14, 165, 233, 0.4);
-        }
-
-        .btn-check:active {
-            transform: translateY(0);
         }
 
         .feedback {
@@ -268,7 +260,6 @@
             border-radius: 20px;
             font-size: 0.85em;
             font-weight: 700;
-            box-shadow: 0 2px 6px rgba(245, 158, 11, 0.3);
         }
 
         .score-box-wrapper {
@@ -278,7 +269,6 @@
             background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
             border-radius: 20px;
             border: 3px dashed #f59e0b;
-            box-shadow: 0 10px 25px -5px rgba(245, 158, 11, 0.2);
         }
 
         .score-box-wrapper h2 {
@@ -297,690 +287,1643 @@
             font-weight: 800;
             font-size: 1.15em;
             cursor: pointer;
-            transition: all 0.2s ease;
-            box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
-        }
-
-        .btn-calculate:hover {
-            background: linear-gradient(135deg, #059669, #047857);
-            transform: translateY(-2px);
-            box-shadow: 0 8px 24px rgba(16, 185, 129, 0.5);
         }
     </style>
 </head>
+
 <body>
 
 <div class="container">
+
     <h1 class="main-title">LATIHAN SOAL AKM INTERAKTIF</h1>
     <div class="subtitle">Bahasa Indonesia — Kelas 3 SD (20 Soal Lengkap)</div>
 
+    <!-- ===================================================== -->
     <!-- MATERI 1 -->
-    <div class="section-header">MATERI 1: Informasi, Ide Pokok, dan Ide Pendukung</div>
+    <!-- ===================================================== -->
 
-    <!-- SOAL 1 -->
-    <div class="question-card" id="card-q1">
-        <div class="question-title">Soal 1 <span>Pilihan Ganda • 3 Poin</span></div>
+    <div class="section-header">
+        MATERI 1: Informasi, Ide Pokok, dan Ide Pendukung
+    </div>
+
+    <!-- SOAL 1 : KUNCI A -->
+    <div class="question-card">
+        <div class="question-title">
+            Soal 1 <span>Pilihan Ganda • 3 Poin</span>
+        </div>
+
         <div class="reading-text">
-            <p>Setiap pagi sebelum bel berbunyi, Budi selalu datang paling awal ke sekolah dengan semangat yang tinggi. Ia langsung meletakkan tasnya di bangku, lalu mengambil sapu untuk membersihkan ruang kelas bersama teman-temannya. Sikap disiplin serta tanggung jawab yang diperlihatkan Budi membuat guru dan teman-temannya merasa bangga.</p>
+            <p>
+                Setiap pagi sebelum bel berbunyi, Budi selalu datang paling awal
+                ke sekolah dengan semangat yang tinggi. Ia langsung meletakkan
+                tasnya di bangku, lalu mengambil sapu untuk membersihkan ruang
+                kelas bersama teman-temannya. Sikap disiplin serta tanggung jawab
+                yang diperlihatkan Budi membuat guru dan teman-temannya merasa bangga.
+            </p>
         </div>
-        <p class="question-text">Bagian dari paragraf yang memuat inti pembahasan atau gagasan utama dari cerita di atas dinamakan…</p>
+
+        <p class="question-text">
+            Bagian dari paragraf yang memuat inti pembahasan atau gagasan utama
+            dari cerita di atas dinamakan…
+        </p>
+
         <div class="options">
-            <label><input type="radio" name="q1" value="A"> A. Kalimat penjelas</label>
-            <label><input type="radio" name="q1" value="B"> B. Kata tanya</label>
-            <label><input type="radio" name="q1" value="C"> C. Ide pokok</label>
-            <label><input type="radio" name="q1" value="D"> D. Judul karangan</label>
+            <label><input type="radio" name="q1" value="A">
+                A. Ide pokok
+            </label>
+            <label><input type="radio" name="q1" value="B">
+                B. Kalimat penjelas
+            </label>
+            <label><input type="radio" name="q1" value="C">
+                C. Kata tanya
+            </label>
+            <label><input type="radio" name="q1" value="D">
+                D. Judul karangan
+            </label>
         </div>
+
         <button class="btn-check" onclick="checkQ1()">Cek Jawaban</button>
         <div class="feedback" id="fb-q1"></div>
     </div>
 
-    <!-- SOAL 2 -->
-    <div class="question-card" id="card-q2">
-        <div class="question-title">Soal 2 <span>Pilihan Ganda Kompleks Tipe 1 • 6 Poin</span></div>
+
+    <!-- SOAL 2 : KUNCI A-B -->
+    <div class="question-card">
+        <div class="question-title">
+            Soal 2 <span>Pilihan Ganda Kompleks Tipe 1 • 6 Poin</span>
+        </div>
+
         <div class="reading-text">
-            <p>Danu sangat rajin merawat berbagai jenis tanaman sayur di pekarangan rumahnya setiap sore setelah selesai belajar. Ia menyiram bibit bayam dan cabai menggunakan air secukupnya agar kelembapan tanah tetap terjaga dengan baik. Usaha telaten tersebut membuat pekarangan rumahnya menjadi tampak asri, hijau, dan menghasilkan sayuran yang segar.</p>
+            <p>
+                Danu sangat rajin merawat berbagai jenis tanaman sayur di
+                pekarangan rumahnya setiap sore setelah selesai belajar.
+                Ia menyiram bibit bayam dan cabai menggunakan air secukupnya
+                agar kelembapan tanah tetap terjaga dengan baik. Usaha telaten
+                tersebut membuat pekarangan rumahnya menjadi tampak asri,
+                hijau, dan menghasilkan sayuran yang segar.
+            </p>
         </div>
-        <p class="question-text">Pernyataan yang TEPAT mengenai kalimat utama dan ide pokok paragraf di atas adalah… <i>(Klik pada setiap jawaban yang benar!)</i></p>
+
+        <p class="question-text">
+            Pernyataan yang TEPAT mengenai kalimat utama dan ide pokok paragraf
+            di atas adalah… <i>(Klik pada setiap jawaban yang benar!)</i>
+        </p>
+
         <div class="options">
-            <label><input type="checkbox" name="q2" value="A"> A. Ide pokok teks di atas adalah cara menanam buah apel di pot.</label>
-            <label><input type="checkbox" name="q2" value="B"> B. Kalimat utama teks di atas berada di awal paragraf.</label>
-            <label><input type="checkbox" name="q2" value="C"> C. Ide pokok bacaan tersebut adalah kegiatan Danu merawat tanaman sayur.</label>
-            <label><input type="checkbox" name="q2" value="D"> D. Kalimat utama teks tersebut membahas harga sayur bayam di pasar.</label>
+            <label><input type="checkbox" name="q2" value="A">
+                A. Kalimat utama teks di atas berada di awal paragraf.
+            </label>
+            <label><input type="checkbox" name="q2" value="B">
+                B. Ide pokok bacaan tersebut adalah kegiatan Danu merawat tanaman sayur.
+            </label>
+            <label><input type="checkbox" name="q2" value="C">
+                C. Ide pokok teks di atas adalah cara menanam buah apel di pot.
+            </label>
+            <label><input type="checkbox" name="q2" value="D">
+                D. Kalimat utama teks tersebut membahas harga sayur bayam di pasar.
+            </label>
         </div>
+
         <button class="btn-check" onclick="checkQ2()">Cek Jawaban</button>
         <div class="feedback" id="fb-q2"></div>
     </div>
 
+
     <!-- SOAL 3 -->
-    <div class="question-card" id="card-q3">
-        <div class="question-title">Soal 3 <span>Pilihan Ganda Kompleks Tipe 2 • 8 Poin</span></div>
-        <div class="reading-text">
-            <p>Menjaga kebersihan dan ketertiban di dalam lingkungan perpustakaan sekolah merupakan kewajiban bersama seluruh siswa. Sebelum memasuki ruangan, pengunjung wajib melepas sepatu dan menaruhnya di rak dengan rapi agar lantai tidak kotor. Selain itu, pengunjung dilarang membawa makanan serta minuman agar buku-buku tidak rusak terkena noda.</p>
+    <div class="question-card">
+        <div class="question-title">
+            Soal 3 <span>Pilihan Ganda Kompleks Tipe 2 • 8 Poin</span>
         </div>
-        <p class="question-text">Berdasarkan informasi yang diberikan, klik pada pilihan Benar atau Salah untuk setiap pernyataan berikut!</p>
+
+        <div class="reading-text">
+            <p>
+                Menjaga kebersihan dan ketertiban di dalam lingkungan perpustakaan
+                sekolah merupakan kewajiban bersama seluruh siswa. Sebelum memasuki
+                ruangan, pengunjung wajib melepas sepatu dan menaruhnya di rak
+                dengan rapi agar lantai tidak kotor. Selain itu, pengunjung dilarang
+                membawa makanan serta minuman agar buku-buku tidak rusak terkena noda.
+            </p>
+        </div>
+
+        <p class="question-text">
+            Berdasarkan informasi yang diberikan, klik pada pilihan Benar atau Salah
+            untuk setiap pernyataan berikut!
+        </p>
+
         <table>
-            <tr><th>No</th><th>Pernyataan</th><th class="center">Benar</th><th class="center">Salah</th></tr>
             <tr>
-                <td>1</td><td>Ide pokok teks di atas adalah aturan menjaga kebersihan dan ketertiban di perpustakaan.</td>
+                <th>No</th>
+                <th>Pernyataan</th>
+                <th class="center">Benar</th>
+                <th class="center">Salah</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Ide pokok teks di atas adalah aturan menjaga kebersihan dan ketertiban di perpustakaan.</td>
                 <td class="center"><input type="radio" name="q3_1" value="B"></td>
                 <td class="center"><input type="radio" name="q3_1" value="S"></td>
             </tr>
             <tr>
-                <td>2</td><td>Menaruh sepatu di rak merupakan salah satu ide pendukung tata tertib perpustakaan.</td>
+                <td>2</td>
+                <td>Menaruh sepatu di rak merupakan salah satu ide pendukung tata tertib perpustakaan.</td>
                 <td class="center"><input type="radio" name="q3_2" value="B"></td>
                 <td class="center"><input type="radio" name="q3_2" value="S"></td>
             </tr>
             <tr>
-                <td>3</td><td>Teks tersebut memperbolehkan siswa makan mi goreng saat membaca buku.</td>
+                <td>3</td>
+                <td>Teks tersebut memperbolehkan siswa makan mi goreng saat membaca buku.</td>
                 <td class="center"><input type="radio" name="q3_3" value="B"></td>
                 <td class="center"><input type="radio" name="q3_3" value="S"></td>
             </tr>
             <tr>
-                <td>4</td><td>Membuang sampah makanan di meja perpustakaan adalah aturan yang tertulis di teks.</td>
+                <td>4</td>
+                <td>Membuang sampah makanan di meja perpustakaan adalah aturan yang tertulis di teks.</td>
                 <td class="center"><input type="radio" name="q3_4" value="B"></td>
                 <td class="center"><input type="radio" name="q3_4" value="S"></td>
             </tr>
         </table>
+
         <button class="btn-check" onclick="checkQ3()">Cek Jawaban</button>
         <div class="feedback" id="fb-q3"></div>
     </div>
 
+
     <!-- SOAL 4 -->
-    <div class="question-card" id="card-q4">
-        <div class="question-title">Soal 4 <span>Pilihan Ganda Kompleks Tipe 2 • 8 Poin</span></div>
-        <div class="reading-text">
-            <p>Semut rangrang merupakan jenis serangga pekerja keras yang hidup secara berkoloni di pepohonan rindang. Mereka bekerja sama membangun sarang yang kuat dari lembaran daun dengan merekatkannya menggunakan benang sutra dari larva. Saat mengumpulkan bahan makanan, para semut akan saling membantu mengangkut beban berat menuju ke dalam sarang.</p>
+    <div class="question-card">
+        <div class="question-title">
+            Soal 4 <span>Pilihan Ganda Kompleks Tipe 2 • 8 Poin</span>
         </div>
-        <p class="question-text">Berdasarkan informasi yang diberikan, klik pada pilihan Benar atau Salah untuk setiap pernyataan berikut!</p>
+
+        <div class="reading-text">
+            <p>
+                Semut rangrang merupakan jenis serangga pekerja keras yang hidup
+                secara berkoloni di pepohonan rindang. Mereka bekerja sama membangun
+                sarang yang kuat dari lembaran daun dengan merekatkannya menggunakan
+                benang sutra dari larva. Saat mengumpulkan bahan makanan, para semut
+                akan saling membantu mengangkut beban berat menuju ke dalam sarang.
+            </p>
+        </div>
+
+        <p class="question-text">
+            Berdasarkan informasi yang diberikan, klik pada pilihan Benar atau Salah
+            untuk setiap pernyataan berikut!
+        </p>
+
         <table>
-            <tr><th>No</th><th>Pernyataan Informasi</th><th class="center">Benar</th><th class="center">Salah</th></tr>
             <tr>
-                <td>1</td><td>Semut rangrang membangun sarang menggunakan batu bata kecil.</td>
+                <th>No</th>
+                <th>Pernyataan Informasi</th>
+                <th class="center">Benar</th>
+                <th class="center">Salah</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Semut rangrang membangun sarang menggunakan batu bata kecil.</td>
                 <td class="center"><input type="radio" name="q4_1" value="B"></td>
                 <td class="center"><input type="radio" name="q4_1" value="S"></td>
             </tr>
             <tr>
-                <td>2</td><td>Semut rangrang memangsa burung hantu untuk dijadikan makanan utama.</td>
+                <td>2</td>
+                <td>Semut rangrang memangsa burung hantu untuk dijadikan makanan utama.</td>
                 <td class="center"><input type="radio" name="q4_2" value="B"></td>
                 <td class="center"><input type="radio" name="q4_2" value="S"></td>
             </tr>
             <tr>
-                <td>3</td><td>Bahan perekat daun pada sarang semut berasal dari benang sutra larva.</td>
+                <td>3</td>
+                <td>Bahan perekat daun pada sarang semut berasal dari benang sutra larva.</td>
                 <td class="center"><input type="radio" name="q4_3" value="B"></td>
                 <td class="center"><input type="radio" name="q4_3" value="S"></td>
             </tr>
             <tr>
-                <td>4</td><td>Cara semut rangrang membawa makanan besar dilakukan dengan saling bekerja sama.</td>
+                <td>4</td>
+                <td>Cara semut rangrang membawa makanan besar dilakukan dengan saling bekerja sama.</td>
                 <td class="center"><input type="radio" name="q4_4" value="B"></td>
                 <td class="center"><input type="radio" name="q4_4" value="S"></td>
             </tr>
         </table>
+
         <button class="btn-check" onclick="checkQ4()">Cek Jawaban</button>
         <div class="feedback" id="fb-q4"></div>
     </div>
 
-    <!-- MATERI 2 -->
-    <div class="section-header">MATERI 2: Tanda Titik, Koma, Tanya, dan Tanda Seru</div>
 
-    <!-- SOAL 5 -->
-    <div class="question-card" id="card-q5">
-        <div class="question-title">Soal 5 <span>Pilihan Ganda • 3 Poin</span></div>
+    <!-- ===================================================== -->
+    <!-- MATERI 2 -->
+    <!-- ===================================================== -->
+
+    <div class="section-header">
+        MATERI 2: Tanda Titik, Koma, Tanya, dan Tanda Seru
+    </div>
+
+
+    <!-- SOAL 5 : KUNCI B -->
+    <div class="question-card">
+        <div class="question-title">
+            Soal 5 <span>Pilihan Ganda • 3 Poin</span>
+        </div>
+
         <div class="reading-text">
-            <p>Pada liburan semester lalu, Nina berkesempatan berkunjung ke rumah neneknya yang terletak di Garut. Udara di desa tempat tinggal nenek terasa sangat sejuk serta bebas dari polusi kendaraan motor. Pengalaman menyenangkan selama menghabiskan masa liburan tersebut selalu Nina kenang sampai sekarang.</p>
+            <p>
+                Pada liburan semester lalu, Nina berkesempatan berkunjung ke
+                rumah neneknya yang terletak di Garut. Udara di desa tempat
+                tinggal nenek terasa sangat sejuk serta bebas dari polusi
+                kendaraan motor. Pengalaman menyenangkan selama menghabiskan
+                masa liburan tersebut selalu Nina kenang sampai sekarang.
+            </p>
         </div>
-        <p class="question-text">Penggunaan tanda titik (.) di akhir kalimat cerita tersebut berfungsi untuk…</p>
+
+        <p class="question-text">
+            Penggunaan tanda titik (.) di akhir kalimat cerita tersebut berfungsi untuk…
+        </p>
+
         <div class="options">
-            <label><input type="radio" name="q5" value="A"> A. Menunjukkan adanya kalimat perintah dari nenek</label>
-            <label><input type="radio" name="q5" value="B"> B. Menggantikan peran tanda tanya pada kalimat</label>
-            <label><input type="radio" name="q5" value="C"> C. Memisahkan rincian nama-nama kota</label>
-            <label><input type="radio" name="q5" value="D"> D. Menandai akhir dari suatu kalimat berita/pernyataan</label>
+            <label><input type="radio" name="q5" value="A">
+                A. Menunjukkan adanya kalimat perintah dari nenek
+            </label>
+            <label><input type="radio" name="q5" value="B">
+                B. Menandai akhir dari suatu kalimat berita/pernyataan
+            </label>
+            <label><input type="radio" name="q5" value="C">
+                C. Menggantikan peran tanda tanya pada kalimat
+            </label>
+            <label><input type="radio" name="q5" value="D">
+                D. Memisahkan rincian nama-nama kota
+            </label>
         </div>
+
         <button class="btn-check" onclick="checkQ5()">Cek Jawaban</button>
         <div class="feedback" id="fb-q5"></div>
     </div>
 
-    <!-- SOAL 6 -->
-    <div class="question-card" id="card-q6">
-        <div class="question-title">Soal 6 <span>Pilihan Ganda • 3 Poin</span></div>
+
+    <!-- SOAL 6 : KUNCI C -->
+    <div class="question-card">
+        <div class="question-title">
+            Soal 6 <span>Pilihan Ganda • 3 Poin</span>
+        </div>
+
         <div class="reading-text">
-            <p>Ibu menyiapkan seluruh perlengkapan memasak di dapur sebelum mulai membuat makanan hidangan keluarga. Beliau menata bahan-bahan masak segar secara rapi di atas meja makan agar mudah diambil. <b>Ibu membeli peralatan dapur seperti pisau, wajan, panci, dan talenan di toko kelontong.</b></p>
+            <p>
+                Ibu menyiapkan seluruh perlengkapan memasak di dapur sebelum mulai
+                membuat makanan hidangan keluarga. Beliau menata bahan-bahan masak
+                segar secara rapi di atas meja makan agar mudah diambil.
+                <b>Ibu membeli peralatan dapur seperti pisau, wajan, panci, dan talenan di toko kelontong.</b>
+            </p>
         </div>
-        <p class="question-text">Penggunaan tanda koma (,) pada kalimat di atas berfungsi untuk…</p>
+
+        <p class="question-text">
+            Penggunaan tanda koma (,) pada kalimat di atas berfungsi untuk…
+        </p>
+
         <div class="options">
-            <label><input type="radio" name="q6" value="A"> A. Menggabungkan dua kalimat tunggal menjadi kalimat majemuk</label>
-            <label><input type="radio" name="q6" value="B"> B. Mengakhiri perkataan tokoh dalam kalimat langsung</label>
-            <label><input type="radio" name="q6" value="C"> C. Memisahkan unsur-unsur pemerincian yang lebih dari dua item</label>
-            <label><input type="radio" name="q6" value="D"> D. Menunjukkan ekspresi kaget atau kagum</label>
+            <label><input type="radio" name="q6" value="A">
+                A. Menggabungkan dua kalimat tunggal menjadi kalimat majemuk
+            </label>
+            <label><input type="radio" name="q6" value="B">
+                B. Mengakhiri perkataan tokoh dalam kalimat langsung
+            </label>
+            <label><input type="radio" name="q6" value="C">
+                C. Memisahkan unsur-unsur pemerincian yang lebih dari dua item
+            </label>
+            <label><input type="radio" name="q6" value="D">
+                D. Menunjukkan ekspresi kaget atau kagum
+            </label>
         </div>
+
         <button class="btn-check" onclick="checkQ6()">Cek Jawaban</button>
         <div class="feedback" id="fb-q6"></div>
     </div>
 
-    <!-- SOAL 7 -->
-    <div class="question-card" id="card-q7">
-        <div class="question-title">Soal 7 <span>Pilihan Ganda • 3 Poin</span></div>
+
+    <!-- SOAL 7 : KUNCI D -->
+    <div class="question-card">
+        <div class="question-title">
+            Soal 7 <span>Pilihan Ganda • 3 Poin</span>
+        </div>
+
         <div class="reading-text">
-            <p>Para siswa menyimak penjelasan Bu Guru dengan saksama mengenai penggunaan tanda baca perintah dan kalimat tanya. Mereka kemudian mempraktikkan materi tersebut dengan membuat berbagai contoh kalimat di buku tugas. Setiap jenis tanda baca harus diletakkan sesuai aturan agar fungsi kalimatnya menjadi tepat dan benar.</p>
+            <p>
+                Para siswa menyimak penjelasan Bu Guru dengan saksama mengenai
+                penggunaan tanda baca perintah dan kalimat tanya. Mereka kemudian
+                mempraktikkan materi tersebut dengan membuat berbagai contoh kalimat
+                di buku tugas. Setiap jenis tanda baca harus diletakkan sesuai aturan
+                agar fungsi kalimatnya menjadi tepat dan benar.
+            </p>
         </div>
-        <p class="question-text">Di antara kalimat berikut, manakah kalimat yang penggunaan tanda baca di akhirnya KURANG TEPAT?</p>
+
+        <p class="question-text">
+            Di antara kalimat berikut, manakah kalimat yang penggunaan tanda baca
+            di akhirnya KURANG TEPAT?
+        </p>
+
         <div class="options">
-            <label><input type="radio" name="q7" value="A"> A. Jam berapa kegiatan piket kelas akan dimulai besok pagi?</label>
-            <label><input type="radio" name="q7" value="B"> B. Ani membeli alat tulis berupa pensil, penggaris, dan penghapus.</label>
-            <label><input type="radio" name="q7" value="C"> C. Tolong tutupkan pintu depan itu dengan rapat?</label>
-            <label><input type="radio" name="q7" value="D"> D. Ambilkan buku cerita itu sekarang juga!</label>
+            <label><input type="radio" name="q7" value="A">
+                A. Jam berapa kegiatan piket kelas akan dimulai besok pagi?
+            </label>
+            <label><input type="radio" name="q7" value="B">
+                B. Ani membeli alat tulis berupa pensil, penggaris, dan penghapus.
+            </label>
+            <label><input type="radio" name="q7" value="C">
+                C. Ambilkan buku cerita itu sekarang juga!
+            </label>
+            <label><input type="radio" name="q7" value="D">
+                D. Tolong tutupkan pintu depan itu dengan rapat?
+            </label>
         </div>
+
         <button class="btn-check" onclick="checkQ7()">Cek Jawaban</button>
         <div class="feedback" id="fb-q7"></div>
     </div>
 
-    <!-- SOAL 8 -->
-    <div class="question-card" id="card-q8">
-        <div class="question-title">Soal 8 <span>Pilihan Ganda Kompleks Tipe 1 • 6 Poin</span></div>
+
+    <!-- SOAL 8 : KUNCI B-C -->
+    <div class="question-card">
+        <div class="question-title">
+            Soal 8 <span>Pilihan Ganda Kompleks Tipe 1 • 6 Poin</span>
+        </div>
+
         <div class="reading-text">
-            <p>Gajah Sumatra merupakan satwa mamalia berukuran besar yang keberadaannya saat ini sangat dilindungi. Berat badan gajah dewasa bahkan mampu mencapai hingga 4,5 ton saat tumbuh secara maksimal. Satwa liar ini sangat menyukai pakan alami berupa rumput, buah-buahan, dan dedaunan segar.</p>
+            <p>
+                Gajah Sumatra merupakan satwa mamalia berukuran besar yang
+                keberadaannya saat ini sangat dilindungi. Berat badan gajah dewasa
+                bahkan mampu mencapai hingga 4,5 ton saat tumbuh secara maksimal.
+                Satwa liar ini sangat menyukai pakan alami berupa rumput,
+                buah-buahan, dan dedaunan segar.
+            </p>
         </div>
-        <p class="question-text">Perhatikan kalimat berikut:<br>(1) Gajah Sumatra adalah satwa yang dilindungi.<br>(2) Berat badan gajah bisa mencapai 4,5 ton.<br>(3) Satwa ini menyukai rumput, buah, dan daun.<br>(4) Bersihkan kandang gajah itu sekarang.<br><br>Penulisan tanda baca (tanda titik, tanda koma, atau tanda seru) yang SUDAH TEPAT pada kalimat di atas adalah… <i>(Klik pada setiap jawaban yang benar!)</i></p>
+
+        <p class="question-text">
+            Perhatikan kalimat berikut:<br>
+            (1) Gajah Sumatra adalah satwa yang dilindungi.<br>
+            (2) Berat badan gajah bisa mencapai 4,5 ton.<br>
+            (3) Satwa ini menyukai rumput, buah, dan daun.<br>
+            (4) Bersihkan kandang gajah itu sekarang.<br><br>
+            Penulisan tanda baca yang SUDAH TEPAT adalah…
+            <i>(Klik pada setiap jawaban yang benar!)</i>
+        </p>
+
         <div class="options">
-            <label><input type="checkbox" name="q8" value="A"> A. Kalimat nomor (4) salah karena harusnya diakhiri tanda tanya (?).</label>
-            <label><input type="checkbox" name="q8" value="B"> B. Kalimat nomor (1) menggunakan tanda titik untuk mengakhiri kalimat berita.</label>
-            <label><input type="checkbox" name="q8" value="C"> C. Kalimat nomor (2) tepat menggunakan tanda koma untuk angka desimal (4,5 ton).</label>
-            <label><input type="checkbox" name="q8" value="D"> D. Kalimat nomor (3) salah karena tidak boleh memakai tanda koma.</label>
+            <label><input type="checkbox" name="q8" value="A">
+                A. Kalimat nomor (4) salah karena harusnya diakhiri tanda tanya (?).
+            </label>
+            <label><input type="checkbox" name="q8" value="B">
+                B. Kalimat nomor (1) menggunakan tanda titik untuk mengakhiri kalimat berita.
+            </label>
+            <label><input type="checkbox" name="q8" value="C">
+                C. Kalimat nomor (2) tepat menggunakan tanda koma untuk angka desimal (4,5 ton).
+            </label>
+            <label><input type="checkbox" name="q8" value="D">
+                D. Kalimat nomor (3) salah karena tidak boleh memakai tanda koma.
+            </label>
         </div>
+
         <button class="btn-check" onclick="checkQ8()">Cek Jawaban</button>
         <div class="feedback" id="fb-q8"></div>
     </div>
 
+
     <!-- SOAL 9 -->
-    <div class="question-card" id="card-q9">
-        <div class="question-title">Soal 9 <span>Pilihan Ganda Kompleks Tipe 2 • 8 Poin</span></div>
-        <div class="reading-text">
-            <p>Penggunaan tanda baca yang tepat sangat penting dalam menyusun kalimat agar tulisan mudah dimengerti. Kesalahan penempatan tanda titik, tanda koma, tanda tanya, atau tanda seru dapat mengubah makna asli tulisan. Oleh karena itu, kita harus cermat dan memperhatikan aturan penulisan tanda baca yang berlaku.</p>
+    <div class="question-card">
+        <div class="question-title">
+            Soal 9 <span>Pilihan Ganda Kompleks Tipe 2 • 8 Poin</span>
         </div>
-        <p class="question-text">Berdasarkan informasi yang diberikan, klik pada pilihan Benar atau Salah untuk setiap pernyataan berikut!</p>
+
+        <div class="reading-text">
+            <p>
+                Penggunaan tanda baca yang tepat sangat penting dalam menyusun
+                kalimat agar tulisan mudah dimengerti. Kesalahan penempatan
+                tanda titik, tanda koma, tanda tanya, atau tanda seru dapat
+                mengubah makna asli tulisan. Oleh karena itu, kita harus cermat
+                dan memperhatikan aturan penulisan tanda baca yang berlaku.
+            </p>
+        </div>
+
+        <p class="question-text">
+            Berdasarkan informasi yang diberikan, klik pada pilihan Benar atau Salah
+            untuk setiap pernyataan berikut!
+        </p>
+
         <table>
-            <tr><th>No</th><th>Analisis Penggunaan Tanda Baca</th><th class="center">Benar</th><th class="center">Salah</th></tr>
             <tr>
-                <td>1</td><td>Kalimat <i>"Di mana rumah Bu Guru."</i> seharusnya diakhiri tanda tanya (?).</td>
+                <th>No</th>
+                <th>Analisis Penggunaan Tanda Baca</th>
+                <th class="center">Benar</th>
+                <th class="center">Salah</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Kalimat <i>"Di mana rumah Bu Guru."</i> seharusnya diakhiri tanda tanya (?).</td>
                 <td class="center"><input type="radio" name="q9_1" value="B"></td>
                 <td class="center"><input type="radio" name="q9_1" value="S"></td>
             </tr>
             <tr>
-                <td>2</td><td>Kalimat perintah <i>"Buka bukumu sekarang!"</i> tepat menggunakan tanda seru (!).</td>
+                <td>2</td>
+                <td>Kalimat perintah <i>"Buka bukumu sekarang!"</i> tepat menggunakan tanda seru (!).</td>
                 <td class="center"><input type="radio" name="q9_2" value="B"></td>
                 <td class="center"><input type="radio" name="q9_2" value="S"></td>
             </tr>
             <tr>
-                <td>3</td><td>Penulisan waktu <i>"Pukul 09,30 WIB"</i> sudah tepat memakai tanda koma.</td>
+                <td>3</td>
+                <td>Penulisan waktu <i>"Pukul 09,30 WIB"</i> sudah tepat memakai tanda koma.</td>
                 <td class="center"><input type="radio" name="q9_3" value="B"></td>
                 <td class="center"><input type="radio" name="q9_3" value="S"></td>
             </tr>
             <tr>
-                <td>4</td><td>Kalimat ajakan <i>"Ayo, kita jaga kebersihan kelas!"</i> salah jika mengunakan tanda seru (!).</td>
+                <td>4</td>
+                <td>Kalimat ajakan <i>"Ayo, kita jaga kebersihan kelas!"</i> salah jika menggunakan tanda seru (!).</td>
                 <td class="center"><input type="radio" name="q9_4" value="B"></td>
                 <td class="center"><input type="radio" name="q9_4" value="S"></td>
             </tr>
         </table>
+
         <button class="btn-check" onclick="checkQ9()">Cek Jawaban</button>
         <div class="feedback" id="fb-q9"></div>
     </div>
 
-    <!-- MATERI 3 -->
-    <div class="section-header">MATERI 3: Tanda Hubung dan Kata Ulang</div>
 
-    <!-- SOAL 10 -->
-    <div class="question-card" id="card-q10">
-        <div class="question-title">Soal 10 <span>Pilihan Ganda • 3 Poin</span></div>
+    <!-- ===================================================== -->
+    <!-- MATERI 3 -->
+    <!-- ===================================================== -->
+
+    <div class="section-header">
+        MATERI 3: Tanda Hubung dan Kata Ulang
+    </div>
+
+
+    <!-- SOAL 10 : KUNCI A -->
+    <div class="question-card">
+        <div class="question-title">
+            Soal 10 <span>Pilihan Ganda • 3 Poin</span>
+        </div>
+
         <div class="reading-text">
-            <p>Pada hari Sabtu pagi, seluruh siswa antusias mengikuti kegiatan kerja bakti di lingkungan sekolah. Mereka membagi tugas seperti memotong rumput liar, menyapu daun kering, dan menyiram tanaman hias. Di area kebun, tampak (1) <u>kupu-kupu</u> hinggap di bunga, angin berembus (2) <u>sepoi-sepoi</u>, anak-anak membawa (3) <u>layang-layangan</u>, dan guru bekerja dengan (4) <u>senang-hati</u>.</p>
+            <p>
+                Pada hari Sabtu pagi, seluruh siswa antusias mengikuti kegiatan
+                kerja bakti di lingkungan sekolah. Mereka membagi tugas seperti
+                memotong rumput liar, menyapu daun kering, dan menyiram tanaman hias.
+                Di area kebun, tampak (1) <u>kupu-kupu</u> hinggap di bunga,
+                angin berembus (2) <u>sepoi-sepoi</u>, anak-anak membawa
+                (3) <u>layang-layangan</u>, dan guru bekerja dengan
+                (4) <u>senang-hati</u>.
+            </p>
         </div>
-        <p class="question-text">Penggunaan tanda hubung (-) pada kata ulang murni yang BENAR dan sesuai ejaan baku terdapat pada nomor…</p>
+
+        <p class="question-text">
+            Penggunaan tanda hubung (-) pada kata ulang murni yang BENAR
+            dan sesuai ejaan baku terdapat pada nomor…
+        </p>
+
         <div class="options">
-            <label><input type="radio" name="q10" value="A"> A. (3) dan (4)</label>
-            <label><input type="radio" name="q10" value="B"> B. (1) dan (3)</label>
-            <label><input type="radio" name="q10" value="C"> C. (1) dan (2)</label>
-            <label><input type="radio" name="q10" value="D"> D. (2) dan (4)</label>
+            <label><input type="radio" name="q10" value="A">
+                A. (1) dan (2)
+            </label>
+            <label><input type="radio" name="q10" value="B">
+                B. (3) dan (4)
+            </label>
+            <label><input type="radio" name="q10" value="C">
+                C. (2) dan (4)
+            </label>
+            <label><input type="radio" name="q10" value="D">
+                D. (1) dan (3)
+            </label>
         </div>
+
         <button class="btn-check" onclick="checkQ10()">Cek Jawaban</button>
         <div class="feedback" id="fb-q10"></div>
     </div>
 
-    <!-- MATERI 4 -->
-    <div class="section-header">MATERI 4: Kalimat Tunggal</div>
 
-    <!-- SOAL 11 -->
-    <div class="question-card" id="card-q11">
-        <div class="question-title">Soal 11 <span>Pilihan Ganda Kompleks Tipe 1 • 6 Poin</span></div>
+    <!-- ===================================================== -->
+    <!-- MATERI 4 -->
+    <!-- ===================================================== -->
+
+    <div class="section-header">
+        MATERI 4: Kalimat Tunggal
+    </div>
+
+
+    <!-- SOAL 11 : KUNCI C-D -->
+    <div class="question-card">
+        <div class="question-title">
+            Soal 11 <span>Pilihan Ganda Kompleks Tipe 1 • 6 Poin</span>
+        </div>
+
         <div class="reading-text">
-            <p>Kalimat tunggal merupakan struktur kalimat dasar yang hanya memiliki satu fungsi klausa (Subjek dan Predikat). Jenis kalimat ini sangat sering kita temukan baik dalam percakapan sehari-hari maupun tulisan teks sederhana. Memahami struktur kalimat tunggal akan memudahkan kita dalam merangkai kalimat secara efektif.</p>
+            <p>
+                Kalimat tunggal merupakan struktur kalimat dasar yang hanya
+                memiliki satu fungsi klausa (Subjek dan Predikat). Jenis kalimat
+                ini sangat sering kita temukan baik dalam percakapan sehari-hari
+                maupun tulisan teks sederhana. Memahami struktur kalimat tunggal
+                akan memudahkan kita dalam merangkai kalimat secara efektif.
+            </p>
         </div>
-        <p class="question-text">Perhatikan empat kalimat berikut:<br>1. Pak Tarno menanam padi di sawah.<br>2. Tino menyapu halaman, sedangkan Dina mengepel lantai.<br>3. Ibu membuat kue bolu di dapur.<br>4. Adik menangis karena mainannya rusak.<br><br>Kalimat yang merupakan <b>kalimat tunggal</b> adalah… <i>(Klik pada setiap jawaban yang benar!)</i></p>
+
+        <p class="question-text">
+            Perhatikan empat kalimat berikut:<br>
+            1. Pak Tarno menanam padi di sawah.<br>
+            2. Tino menyapu halaman, sedangkan Dina mengepel lantai.<br>
+            3. Ibu membuat kue bolu di dapur.<br>
+            4. Adik menangis karena mainannya rusak.<br><br>
+            Kalimat yang merupakan <b>kalimat tunggal</b> adalah…
+            <i>(Klik pada setiap jawaban yang benar!)</i>
+        </p>
+
         <div class="options">
-            <label><input type="checkbox" name="q11" value="A"> A. Kalimat nomor 2</label>
-            <label><input type="checkbox" name="q11" value="B"> B. Kalimat nomor 4</label>
-            <label><input type="checkbox" name="q11" value="C"> C. Kalimat nomor 1</label>
-            <label><input type="checkbox" name="q11" value="D"> D. Kalimat nomor 3</label>
+            <label><input type="checkbox" name="q11" value="A">
+                A. Kalimat nomor 2
+            </label>
+            <label><input type="checkbox" name="q11" value="B">
+                B. Kalimat nomor 4
+            </label>
+            <label><input type="checkbox" name="q11" value="C">
+                C. Kalimat nomor 1
+            </label>
+            <label><input type="checkbox" name="q11" value="D">
+                D. Kalimat nomor 3
+            </label>
         </div>
+
         <button class="btn-check" onclick="checkQ11()">Cek Jawaban</button>
         <div class="feedback" id="fb-q11"></div>
     </div>
 
+
     <!-- SOAL 12 -->
-    <div class="question-card" id="card-q12">
-        <div class="question-title">Soal 12 <span>Pilihan Ganda Kompleks Tipe 2 • 8 Poin</span></div>
-        <div class="reading-text">
-            <p>Suasana di rumah Lani selalu diisi dengan berbagai aktivitas keluarga yang hangat dan menyenangkan setiap akhir pekan. Ayah sibuk merawat tanaman bunga di halaman, sementara Ibu memasak kudapan manis di dapur. Pada saat bersamaan, <b>"Lani menggambar pemandangan di ruang tamu."</b> dengan sangat tekun.</p>
+    <div class="question-card">
+        <div class="question-title">
+            Soal 12 <span>Pilihan Ganda Kompleks Tipe 2 • 8 Poin</span>
         </div>
-        <p class="question-text">Berdasarkan analisis struktur pada kalimat tercetak tebal di atas, klik pada pilihan Benar atau Salah untuk setiap pernyataan berikut!</p>
+
+        <div class="reading-text">
+            <p>
+                Suasana di rumah Lani selalu diisi dengan berbagai aktivitas
+                keluarga yang hangat dan menyenangkan setiap akhir pekan.
+                Ayah sibuk merawat tanaman bunga di halaman, sementara Ibu
+                memasak kudapan manis di dapur. Pada saat bersamaan,
+                <b>"Lani menggambar pemandangan di ruang tamu."</b>
+                dengan sangat tekun.
+            </p>
+        </div>
+
+        <p class="question-text">
+            Berdasarkan analisis struktur pada kalimat tercetak tebal di atas,
+            klik pada pilihan Benar atau Salah!
+        </p>
+
         <table>
-            <tr><th>No</th><th>Analisis Struktur Kalimat</th><th class="center">Benar</th><th class="center">Salah</th></tr>
             <tr>
-                <td>1</td><td>Kata "Lani" berfungsi sebagai Subjek (S).</td>
+                <th>No</th>
+                <th>Analisis Struktur Kalimat</th>
+                <th class="center">Benar</th>
+                <th class="center">Salah</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Kata "Lani" berfungsi sebagai Subjek (S).</td>
                 <td class="center"><input type="radio" name="q12_1" value="B"></td>
                 <td class="center"><input type="radio" name="q12_1" value="S"></td>
             </tr>
             <tr>
-                <td>2</td><td>Kata "menggambar" berfungsi sebagai Objek (O).</td>
+                <td>2</td>
+                <td>Kata "menggambar" berfungsi sebagai Objek (O).</td>
                 <td class="center"><input type="radio" name="q12_2" value="B"></td>
                 <td class="center"><input type="radio" name="q12_2" value="S"></td>
             </tr>
             <tr>
-                <td>3</td><td>Kata "pemandangan" berfungsi sebagai Objek (O).</td>
+                <td>3</td>
+                <td>Kata "pemandangan" berfungsi sebagai Objek (O).</td>
                 <td class="center"><input type="radio" name="q12_3" value="B"></td>
                 <td class="center"><input type="radio" name="q12_3" value="S"></td>
             </tr>
             <tr>
-                <td>4</td><td>Kata "di ruang tamu" berfungsi sebagai Keterangan Tempat (K).</td>
+                <td>4</td>
+                <td>"di ruang tamu" berfungsi sebagai Keterangan Tempat (K).</td>
                 <td class="center"><input type="radio" name="q12_4" value="B"></td>
                 <td class="center"><input type="radio" name="q12_4" value="S"></td>
             </tr>
         </table>
+
         <button class="btn-check" onclick="checkQ12()">Cek Jawaban</button>
         <div class="feedback" id="fb-q12"></div>
     </div>
 
-    <!-- MATERI 5 -->
-    <div class="section-header">MATERI 5: Kalimat Efektif</div>
 
-    <!-- SOAL 13 -->
-    <div class="question-card" id="card-q13">
-        <div class="question-title">Soal 13 <span>Pilihan Ganda • 3 Poin</span></div>
+    <!-- ===================================================== -->
+    <!-- MATERI 5 -->
+    <!-- ===================================================== -->
+
+    <div class="section-header">
+        MATERI 5: Kalimat Efektif
+    </div>
+
+
+    <!-- SOAL 13 : KUNCI B -->
+    <div class="question-card">
+        <div class="question-title">
+            Soal 13 <span>Pilihan Ganda • 3 Poin</span>
+        </div>
+
         <div class="reading-text">
-            <p>Siswa kelas 3 SD mendapatkan tugas dari guru untuk menyusun kalimat pengumuman singkat di papan tulis. Pengumuman tersebut bertujuan memberikan informasi penting kepada seluruh warga kelas agar dapat dipahami dengan cepat. Kalimat yang disusun secara tepat, jelas, hemat kata, serta mudah dimengerti dinamakan kalimat efektif.</p>
+            <p>
+                Siswa kelas 3 SD mendapatkan tugas dari guru untuk menyusun
+                kalimat pengumuman singkat di papan tulis. Pengumuman tersebut
+                bertujuan memberikan informasi penting kepada seluruh warga kelas
+                agar dapat dipahami dengan cepat. Kalimat yang disusun secara
+                tepat, jelas, hemat kata, serta mudah dimengerti dinamakan kalimat efektif.
+            </p>
         </div>
-        <p class="question-text">Berdasarkan bacaan di atas, apakah ciri utama dari sebuah kalimat efektif?</p>
+
+        <p class="question-text">
+            Berdasarkan bacaan di atas, apakah ciri utama dari sebuah kalimat efektif?
+        </p>
+
         <div class="options">
-            <label><input type="radio" name="q13" value="A"> A. Menggunakan susunan kata yang sangat panjang dan sulit</label>
-            <label><input type="radio" name="q13" value="B"> B. Berisi ungkapan kiasan yang membingungkan pembaca</label>
-            <label><input type="radio" name="q13" value="C"> C. Menyampaikan pesan secara hemat kata, jelas, dan logis</label>
-            <label><input type="radio" name="q13" value="D"> D. Mengulang kata-kata yang sama secara terus-menerus</label>
+            <label><input type="radio" name="q13" value="A">
+                A. Menggunakan susunan kata yang sangat panjang dan sulit
+            </label>
+            <label><input type="radio" name="q13" value="B">
+                B. Menyampaikan pesan secara hemat kata, jelas, dan logis
+            </label>
+            <label><input type="radio" name="q13" value="C">
+                C. Berisi ungkapan kiasan yang membingungkan pembaca
+            </label>
+            <label><input type="radio" name="q13" value="D">
+                D. Mengulang kata-kata yang sama secara terus-menerus
+            </label>
         </div>
+
         <button class="btn-check" onclick="checkQ13()">Cek Jawaban</button>
         <div class="feedback" id="fb-q13"></div>
     </div>
 
-    <!-- SOAL 14 -->
-    <div class="question-card" id="card-q14">
-        <div class="question-title">Soal 14 <span>Pilihan Ganda • 3 Poin</span></div>
+
+    <!-- SOAL 14 : KUNCI C -->
+    <div class="question-card">
+        <div class="question-title">
+            Soal 14 <span>Pilihan Ganda • 3 Poin</span>
+        </div>
+
         <div class="reading-text">
-            <p>Perpustakaan sekolah baru saja menambah koleksi buku bacaan berupa dongeng dan ensiklopedia anak yang menarik. Saat jam istirahat, banyak siswa berkunjung ke perpustakaan untuk membaca buku kesukaan mereka. Namun, Bu Guru menemukan tulisan siswa yang berbunyi: <b>"Siswa-siswa murid kelas 3 sangat rajin-rajin sekali belajar di perpustakaan."</b></p>
+            <p>
+                Perpustakaan sekolah baru saja menambah koleksi buku bacaan berupa
+                dongeng dan ensiklopedia anak yang menarik. Saat jam istirahat,
+                banyak siswa berkunjung ke perpustakaan untuk membaca buku kesukaan
+                mereka. Namun, Bu Guru menemukan tulisan siswa yang berbunyi:
+                <b>"Siswa-siswa murid kelas 3 sangat rajin-rajin sekali belajar di perpustakaan."</b>
+            </p>
         </div>
-        <p class="question-text">Perbaikan kalimat yang dicetak tebal di atas agar menjadi <b>kalimat efektif</b> yang hemat kata dan tepat adalah…</p>
+
+        <p class="question-text">
+            Perbaikan kalimat yang dicetak tebal agar menjadi
+            <b>kalimat efektif</b> adalah…
+        </p>
+
         <div class="options">
-            <label><input type="radio" name="q14" value="A"> A. Para siswa-siswa murid kelas 3 rajin belajar di perpustakaan.</label>
-            <label><input type="radio" name="q14" value="B"> B. Siswa kelas 3 sangat rajin belajar di perpustakaan.</label>
-            <label><input type="radio" name="q14" value="C"> C. Murid-murid kelas 3 amat rajin-rajin sekali belajar di perpustakaan.</label>
-            <label><input type="radio" name="q14" value="D"> D. Banyak siswa-siswa kelas 3 belajar rajin di perpustakaan.</label>
+            <label><input type="radio" name="q14" value="A">
+                A. Para siswa-siswa murid kelas 3 rajin belajar di perpustakaan.
+            </label>
+            <label><input type="radio" name="q14" value="B">
+                B. Murid-murid kelas 3 amat rajin-rajin sekali belajar di perpustakaan.
+            </label>
+            <label><input type="radio" name="q14" value="C">
+                C. Siswa kelas 3 sangat rajin belajar di perpustakaan.
+            </label>
+            <label><input type="radio" name="q14" value="D">
+                D. Banyak siswa-siswa kelas 3 belajar rajin di perpustakaan.
+            </label>
         </div>
+
         <button class="btn-check" onclick="checkQ14()">Cek Jawaban</button>
         <div class="feedback" id="fb-q14"></div>
     </div>
 
+
     <!-- SOAL 15 -->
-    <div class="question-card" id="card-q15">
-        <div class="question-title">Soal 15 <span>Pilihan Ganda Kompleks Tipe 2 • 8 Poin</span></div>
-        <div class="reading-text">
-            <p>Pemborosan kata merupakan kesalahan penulisan yang sering dilakukan saat kita membuat karangan cerita pendek. Penggunaan kata bermakna sama secara berulang membuat kalimat menjadi tidak efektif dan sulit dipahami. Mempelajari aturan tata bahasa membantu kita menulis teks secara efisien, jelas, dan komunikatif.</p>
+    <div class="question-card">
+        <div class="question-title">
+            Soal 15 <span>Pilihan Ganda Kompleks Tipe 2 • 8 Poin</span>
         </div>
-        <p class="question-text">Berdasarkan informasi yang diberikan, klik pada pilihan Benar atau Salah untuk setiap pernyataan berikut!</p>
+
+        <div class="reading-text">
+            <p>
+                Pemborosan kata merupakan kesalahan penulisan yang sering dilakukan
+                saat kita membuat karangan cerita pendek. Penggunaan kata bermakna
+                sama secara berulang membuat kalimat menjadi tidak efektif dan sulit
+                dipahami. Mempelajari aturan tata bahasa membantu kita menulis teks
+                secara efisien, jelas, dan komunikatif.
+            </p>
+        </div>
+
+        <p class="question-text">
+            Berdasarkan informasi yang diberikan, klik pada pilihan Benar atau Salah!
+        </p>
+
         <table>
-            <tr><th>No</th><th>Kalimat & Analisisnya</th><th class="center">Benar</th><th class="center">Salah</th></tr>
             <tr>
-                <td>1</td><td>Kalimat <i>"Boni maju ke depan"</i> boros kata karena "maju" pasti ke depan.</td>
+                <th>No</th>
+                <th>Kalimat & Analisisnya</th>
+                <th class="center">Benar</th>
+                <th class="center">Salah</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Kalimat <i>"Boni maju ke depan"</i> boros kata karena "maju" pasti ke depan.</td>
                 <td class="center"><input type="radio" name="q15_1" value="B"></td>
                 <td class="center"><input type="radio" name="q15_1" value="S"></td>
             </tr>
             <tr>
-                <td>2</td><td>Kalimat <i>"Demi untuk kesehatan, kita harus olahraga"</i> memuat kata berulang (demi/untuk).</td>
+                <td>2</td>
+                <td>Kalimat <i>"Demi untuk kesehatan, kita harus olahraga"</i> memuat kata berulang.</td>
                 <td class="center"><input type="radio" name="q15_2" value="B"></td>
                 <td class="center"><input type="radio" name="q15_2" value="S"></td>
             </tr>
             <tr>
-                <td>3</td><td>Kalimat <i>"Ibu memasak di dapur"</i> tidak efektif karena kata-katanya terlalu pendek.</td>
+                <td>3</td>
+                <td>Kalimat <i>"Ibu memasak di dapur"</i> tidak efektif karena kata-katanya terlalu pendek.</td>
                 <td class="center"><input type="radio" name="q15_3" value="B"></td>
                 <td class="center"><input type="radio" name="q15_3" value="S"></td>
             </tr>
             <tr>
-                <td>4</td><td>Penggunaan kata <i>"Sangat indah sekali"</i> sudah hemat dan tidak perlu diperbaiki.</td>
+                <td>4</td>
+                <td>Penggunaan kata <i>"Sangat indah sekali"</i> sudah hemat dan tidak perlu diperbaiki.</td>
                 <td class="center"><input type="radio" name="q15_4" value="B"></td>
                 <td class="center"><input type="radio" name="q15_4" value="S"></td>
             </tr>
         </table>
+
         <button class="btn-check" onclick="checkQ15()">Cek Jawaban</button>
         <div class="feedback" id="fb-q15"></div>
     </div>
 
-    <!-- MATERI 6 -->
-    <div class="section-header">MATERI 6: Kata Baku & Ejaan/Huruf Kapital</div>
 
-    <!-- SOAL 16 -->
-    <div class="question-card" id="card-q16">
-        <div class="question-title">Soal 16 <span>Pilihan Ganda • 3 Poin</span></div>
+    <!-- ===================================================== -->
+    <!-- MATERI 6 -->
+    <!-- ===================================================== -->
+
+    <div class="section-header">
+        MATERI 6: Kata Baku & Ejaan/Huruf Kapital
+    </div>
+
+
+    <!-- SOAL 16 : KUNCI D -->
+    <div class="question-card">
+        <div class="question-title">
+            Soal 16 <span>Pilihan Ganda • 3 Poin</span>
+        </div>
+
         <div class="reading-text">
-            <p>Made sedang menuliskan agenda rencana karya wisata sekolah di buku catatan pribadinya dengan rapi. Kegiatan kunjungan tersebut bertujuan untuk menambah pengetahuan serta pengalaman belajar seluruh siswa kelas 3 SD. Made mencatat kalimat: <u>"paman dedi mengajak keluarga berlibur ke kota bandung pada hari rabu, 12 oktober 2026."</u></p>
+            <p>
+                Made sedang menuliskan agenda rencana karya wisata sekolah di buku
+                catatan pribadinya dengan rapi. Kegiatan kunjungan tersebut bertujuan
+                untuk menambah pengetahuan serta pengalaman belajar seluruh siswa
+                kelas 3 SD. Made mencatat kalimat:
+                <u>"paman dedi mengajak keluarga berlibur ke kota bandung pada hari rabu, 12 oktober 2026."</u>
+            </p>
         </div>
-        <p class="question-text">Bagaimanakah penulisan penggunaan <b>huruf kapital</b> yang BENAR untuk memperbaiki kalimat bergaris bawah di atas?</p>
+
+        <p class="question-text">
+            Bagaimanakah penulisan penggunaan <b>huruf kapital</b> yang BENAR?
+        </p>
+
         <div class="options">
-            <label><input type="radio" name="q16" value="A"> A. paman Dedi mengajak keluarga berlibur ke kota Bandung pada Hari Rabu, 12 oktober 2026.</label>
-            <label><input type="radio" name="q16" value="B"> B. Paman dedi mengajak keluarga Berlibur ke Kota bandung pada hari Rabu, 12 Oktober 2026.</label>
-            <label><input type="radio" name="q16" value="C"> C. Paman Dedi Mengajak Keluarga Berlibur Ke Kota Bandung Pada Hari Rabu, 12 Oktober 2026.</label>
-            <label><input type="radio" name="q16" value="D"> D. Paman Dedi mengajak keluarga berlibur ke Kota Bandung pada hari Rabu, 12 Oktober 2026.</label>
+            <label><input type="radio" name="q16" value="A">
+                A. paman Dedi mengajak keluarga berlibur ke kota Bandung pada Hari Rabu, 12 oktober 2026.
+            </label>
+            <label><input type="radio" name="q16" value="B">
+                B. Paman dedi mengajak keluarga Berlibur ke Kota bandung pada hari Rabu, 12 Oktober 2026.
+            </label>
+            <label><input type="radio" name="q16" value="C">
+                C. Paman Dedi Mengajak Keluarga Berlibur Ke Kota Bandung Pada Hari Rabu, 12 Oktober 2026.
+            </label>
+            <label><input type="radio" name="q16" value="D">
+                D. Paman Dedi mengajak keluarga berlibur ke Kota Bandung pada hari Rabu, 12 Oktober 2026.
+            </label>
         </div>
+
         <button class="btn-check" onclick="checkQ16()">Cek Jawaban</button>
         <div class="feedback" id="fb-q16"></div>
     </div>
 
-    <!-- SOAL 17 -->
-    <div class="question-card" id="card-q17">
-        <div class="question-title">Soal 17 <span>Pilihan Ganda • 3 Poin</span></div>
+
+    <!-- SOAL 17 : KUNCI B -->
+    <div class="question-card">
+        <div class="question-title">
+            Soal 17 <span>Pilihan Ganda • 3 Poin</span>
+        </div>
+
         <div class="reading-text">
-            <p>Penggunaan kata baku merupakan aturan penting yang wajib diterapkan saat kita menyusun teks resmi atau tugas sekolah. Standar ragam kata baku dalam bahasa Indonesia dirujuk dari Kamus Besar Bahasa Indonesia (KBBI). Pemahaman kata baku membantu meningkatkan kualitas tulisan serta kemampuan berbahasa anak.</p>
+            <p>
+                Penggunaan kata baku merupakan aturan penting yang wajib diterapkan
+                saat kita menyusun teks resmi atau tugas sekolah. Standar ragam kata
+                baku dalam bahasa Indonesia dirujuk dari Kamus Besar Bahasa Indonesia
+                (KBBI). Pemahaman kata baku membantu meningkatkan kualitas tulisan
+                serta kemampuan berbahasa anak.
+            </p>
         </div>
-        <p class="question-text">Perhatikan daftar pasangan kata berikut:<br>1. Apotek (Baku) — Apotik (Tidak Baku)<br>2. Praktek (Baku) — Praktik (Tidak Baku)<br>3. Cabai (Baku) — Cabe (Tidak Baku)<br>4. Nasehat (Baku) — Nasihat (Tidak Baku)<br><br>Pasangan baku dan tidak baku yang TEPAT ditunjukkan nomor…</p>
+
+        <p class="question-text">
+            Pasangan baku dan tidak baku yang TEPAT ditunjukkan nomor…
+        </p>
+
         <div class="options">
-            <label><input type="radio" name="q17" value="A"> A. 1 dan 2</label>
-            <label><input type="radio" name="q17" value="B"> B. 2 dan 4</label>
-            <label><input type="radio" name="q17" value="C"> C. 1 dan 3</label>
-            <label><input type="radio" name="q17" value="D"> D. 3 dan 4</label>
+            <label><input type="radio" name="q17" value="A">
+                A. 2 dan 4
+            </label>
+            <label><input type="radio" name="q17" value="B">
+                B. 1 dan 3
+            </label>
+            <label><input type="radio" name="q17" value="C">
+                C. 1 dan 2
+            </label>
+            <label><input type="radio" name="q17" value="D">
+                D. 3 dan 4
+            </label>
         </div>
+
         <button class="btn-check" onclick="checkQ17()">Cek Jawaban</button>
         <div class="feedback" id="fb-q17"></div>
     </div>
 
-    <!-- MATERI 7 -->
-    <div class="section-header">MATERI 7: Kalimat Tanya</div>
 
-    <!-- SOAL 18 -->
-    <div class="question-card" id="card-q18">
-        <div class="question-title">Soal 18 <span>Pilihan Ganda • 3 Poin</span></div>
+    <!-- ===================================================== -->
+    <!-- MATERI 7 -->
+    <!-- ===================================================== -->
+
+    <div class="section-header">
+        MATERI 7: Kalimat Tanya
+    </div>
+
+
+    <!-- SOAL 18 : KUNCI C -->
+    <div class="question-card">
+        <div class="question-title">
+            Soal 18 <span>Pilihan Ganda • 3 Poin</span>
+        </div>
+
         <div class="reading-text">
-            <p>Saat jam istirahat sekolah, Bayu melihat Edo hanya duduk sendirian di tepi lapangan basket. Bayu menghampiri sahabatnya itu karena merasa heran Edo tidak ikut bermain seperti biasanya. Bayu bertanya <i>"Mengapa kamu tidak ikut bermain sepeda sore ini, Edo?"</i></p>
+            <p>
+                Saat jam istirahat sekolah, Bayu melihat Edo hanya duduk sendirian
+                di tepi lapangan basket. Bayu menghampiri sahabatnya itu karena
+                merasa heran Edo tidak ikut bermain seperti biasanya. Bayu bertanya
+                <i>"Mengapa kamu tidak ikut bermain sepeda sore ini, Edo?"</i>
+            </p>
         </div>
-        <p class="question-text">Kalimat yang diucapkan Bayu berfungsi untuk…</p>
+
+        <p class="question-text">
+            Kalimat yang diucapkan Bayu berfungsi untuk…
+        </p>
+
         <div class="options">
-            <label><input type="radio" name="q18" value="A"> A. Memberikan perintah kepada Edo</label>
-            <label><input type="radio" name="q18" value="B"> B. Meringkas isi cerita bermain sepeda</label>
-            <label><input type="radio" name="q18" value="C"> C. Menanyakan alasan kepada Edo</label>
-            <label><input type="radio" name="q18" value="D"> D. Menyampaikan berita tentang sepeda</label>
+            <label><input type="radio" name="q18" value="A">
+                A. Memberikan perintah kepada Edo
+            </label>
+            <label><input type="radio" name="q18" value="B">
+                B. Meringkas isi cerita bermain sepeda
+            </label>
+            <label><input type="radio" name="q18" value="C">
+                C. Menanyakan alasan kepada Edo
+            </label>
+            <label><input type="radio" name="q18" value="D">
+                D. Menyampaikan berita tentang sepeda
+            </label>
         </div>
+
         <button class="btn-check" onclick="checkQ18()">Cek Jawaban</button>
         <div class="feedback" id="fb-q18"></div>
     </div>
 
-    <!-- SOAL 19 -->
-    <div class="question-card" id="card-q19">
-        <div class="question-title">Soal 19 <span>Pilihan Ganda Kompleks Tipe 1 • 6 Poin</span></div>
+
+    <!-- SOAL 19 : KUNCI A-D -->
+    <div class="question-card">
+        <div class="question-title">
+            Soal 19 <span>Pilihan Ganda Kompleks Tipe 1 • 6 Poin</span>
+        </div>
+
         <div class="reading-text">
-            <p>Tari Pendet merupakan jenis tarian tradisional yang berasal dari daerah Pulau Bali. Tarian ini pada mulanya dibawakan di pura sebagai bentuk penyambutan atas turunnya para dewata. Saat menari, para penari membawa mangkok berukir berisi bunga segar yang akan ditaburkan ke penonton.</p>
+            <p>
+                Tari Pendet merupakan jenis tarian tradisional yang berasal dari
+                daerah Pulau Bali. Tarian ini pada mulanya dibawakan di pura sebagai
+                bentuk penyambutan atas turunnya para dewata. Saat menari, para penari
+                membawa mangkok berukir berisi bunga segar yang akan ditaburkan
+                ke penonton.
+            </p>
         </div>
-        <p class="question-text">Kalimat tanya yang jawabannya DAPAT DITEMUKAN dalam teks di atas adalah… <i>(Klik pada setiap jawaban yang benar!)</i></p>
+
+        <p class="question-text">
+            Kalimat tanya yang jawabannya DAPAT DITEMUKAN dalam teks di atas adalah…
+            <i>(Klik pada setiap jawaban yang benar!)</i>
+        </p>
+
         <div class="options">
-            <label><input type="checkbox" name="q19" value="A"> A. Berapa biaya untuk membeli pakaian penari Pendet?</label>
-            <label><input type="checkbox" name="q19" value="B"> B. Dari daerah manakah asal Tari Pendet?</label>
-            <label><input type="checkbox" name="q19" value="C"> C. Siapa nama pencipta lagu pengiring Tari Pendet?</label>
-            <label><input type="checkbox" name="q19" value="D"> D. Apa yang dibawa oleh para penari Pendet saat menari?</label>
+            <label><input type="checkbox" name="q19" value="A">
+                A. Dari daerah manakah asal Tari Pendet?
+            </label>
+            <label><input type="checkbox" name="q19" value="B">
+                B. Berapa biaya untuk membeli pakaian penari Pendet?
+            </label>
+            <label><input type="checkbox" name="q19" value="C">
+                C. Siapa nama pencipta lagu pengiring Tari Pendet?
+            </label>
+            <label><input type="checkbox" name="q19" value="D">
+                D. Apa yang dibawa oleh para penari Pendet saat menari?
+            </label>
         </div>
+
         <button class="btn-check" onclick="checkQ19()">Cek Jawaban</button>
         <div class="feedback" id="fb-q19"></div>
     </div>
 
-    <!-- SOAL 20 -->
-    <div class="question-card" id="card-q20">
-        <div class="question-title">Soal 20 <span>Pilihan Ganda Kompleks Tipe 1 • 6 Poin</span></div>
+
+    <!-- SOAL 20 : KUNCI A-C-D -->
+    <div class="question-card">
+        <div class="question-title">
+            Soal 20 <span>Pilihan Ganda Kompleks Tipe 1 • 6 Poin</span>
+        </div>
+
         <div class="reading-text">
-            <p>Kemarin sore, Pak Wayan mengisi waktu luangnya dengan merakit kerajinan sarang burung sederhana. Beliau memanfaatkan potongan bambu bekas yang masih kuat sebagai bahan utama pembuatannya. Pak Wayan mengerjakan sarang burung tersebut dengan teliti di area teras belakang rumahnya.</p>
+            <p>
+                Kemarin sore, Pak Wayan mengisi waktu luangnya dengan merakit
+                kerajinan sarang burung sederhana. Beliau memanfaatkan potongan
+                bambu bekas yang masih kuat sebagai bahan utama pembuatannya.
+                Pak Wayan mengerjakan sarang burung tersebut dengan teliti
+                di area teras belakang rumahnya.
+            </p>
         </div>
-        <p class="question-text">Kata tanya yang TEPAT untuk menanyakan bahan dan tempat kegiatan Pak Wayan adalah… <i>(Klik pada setiap jawaban yang benar!)</i></p>
+
+        <p class="question-text">
+            Kalimat tanya yang jawabannya DAPAT DITEMUKAN dalam teks di atas adalah…
+            <i>(Klik pada setiap jawaban yang benar!)</i>
+        </p>
+
         <div class="options">
-            <label><input type="checkbox" name="q20" value="A"> A. Kapan Pak Wayan akan menjual sarang burung itu ke pasar?</label>
-            <label><input type="checkbox" name="q20" value="B"> B. Apa bahan yang digunakan Pak Wayan untuk membuat sarang burung?</label>
-            <label><input type="checkbox" name="q20" value="C"> C. Di mana Pak Wayan merakit sarang burung tersebut?</label>
-            <label><input type="checkbox" name="q20" value="D"> D. Mengapa sarang burung itu ditaruh di atas pohon mangga?</label>
+            <label><input type="checkbox" name="q20" value="A">
+                A. Apa bahan yang digunakan Pak Wayan untuk membuat sarang burung?
+            </label>
+            <label><input type="checkbox" name="q20" value="B">
+                B. Mengapa Pak Wayan membuat sarang burung tersebut?
+            </label>
+            <label><input type="checkbox" name="q20" value="C">
+                C. Di mana Pak Wayan merakit sarang burung tersebut?
+            </label>
+            <label><input type="checkbox" name="q20" value="D">
+                D. Kapan Pak Wayan merakit sarang burung tersebut?
+            </label>
         </div>
+
         <button class="btn-check" onclick="checkQ20()">Cek Jawaban</button>
         <div class="feedback" id="fb-q20"></div>
     </div>
 
-    <!-- KOTAK SKOR AKHIR -->
+
+    <!-- ===================================================== -->
+    <!-- SKOR AKHIR -->
+    <!-- ===================================================== -->
+
     <div class="score-box-wrapper">
         <h2>Hasil Evaluasi AKM</h2>
-        <p style="margin-bottom: 22px; color: #78350f; font-weight: 600;">Pastikan kamu sudah menjawab dan memeriksa semua nomor sebelum menghitung skor akhir!</p>
+
+        <p style="margin-bottom: 22px; color: #78350f; font-weight: 600;">
+            Pastikan kamu sudah menjawab dan memeriksa semua nomor
+            sebelum menghitung skor akhir!
+        </p>
+
         <button class="btn-calculate" onclick="calculateTotalScore()">
             🏆 Hitung Total Skor Saya
         </button>
-        <div id="final-score-box" style="display: none; margin-top: 24px; font-size: 1.8em; font-weight: 900; color: #047857;"></div>
+
+        <div id="final-score-box"
+             style="display:none; margin-top:24px; font-size:1.8em;
+                    font-weight:900; color:#047857;">
+        </div>
     </div>
 
 </div>
 
+
 <script>
-    function getCurrentTotalScore() {
-        let score = 0;
 
-        if (document.querySelector('input[name="q1"]:checked')?.value === 'C') score += 3;
-        if (document.querySelector('input[name="q5"]:checked')?.value === 'D') score += 3;
-        if (document.querySelector('input[name="q6"]:checked')?.value === 'C') score += 3;
-        if (document.querySelector('input[name="q7"]:checked')?.value === 'C') score += 3;
-        if (document.querySelector('input[name="q10"]:checked')?.value === 'C') score += 3;
-        if (document.querySelector('input[name="q13"]:checked')?.value === 'C') score += 3;
-        if (document.querySelector('input[name="q14"]:checked')?.value === 'B') score += 3;
-        if (document.querySelector('input[name="q16"]:checked')?.value === 'D') score += 3;
-        if (document.querySelector('input[name="q17"]:checked')?.value === 'C') score += 3;
-        if (document.querySelector('input[name="q18"]:checked')?.value === 'C') score += 3;
+/* =========================================================
+   FUNGSI MENGHITUNG SKOR
+   ========================================================= */
 
-        const getChecked = (name) => Array.from(document.querySelectorAll(`input[name="${name}"]:checked`)).map(c => c.value);
-        
-        const q2 = getChecked('q2');
-        if (q2.includes('B') && q2.includes('C') && q2.length === 2) score += 6;
+function getCurrentTotalScore() {
 
-        const q8 = getChecked('q8');
-        if (q8.includes('B') && q8.includes('C') && q8.length === 2) score += 6;
+    let score = 0;
 
-        const q11 = getChecked('q11');
-        if (q11.includes('C') && q11.includes('D') && q11.length === 2) score += 6;
+    /* PG BIASA
+       A = Q1, Q10
+       B = Q5, Q13, Q17
+       C = Q6, Q14, Q18
+       D = Q7, Q16
+    */
 
-        const q19 = getChecked('q19');
-        if (q19.includes('B') && q19.includes('D') && q19.length === 2) score += 6;
+    if (document.querySelector('input[name="q1"]:checked')?.value === 'A')
+        score += 3;
 
-        const q20 = getChecked('q20');
-        if (q20.includes('B') && q20.includes('C') && q20.length === 2) score += 6;
+    if (document.querySelector('input[name="q5"]:checked')?.value === 'B')
+        score += 3;
 
-        const getVal = (name) => document.querySelector(`input[name="${name}"]:checked`)?.value;
+    if (document.querySelector('input[name="q6"]:checked')?.value === 'C')
+        score += 3;
 
-        if (getVal('q3_1')==='B' && getVal('q3_2')==='B' && getVal('q3_3')==='S' && getVal('q3_4')==='S') score += 8;
-        if (getVal('q4_1')==='S' && getVal('q4_2')==='S' && getVal('q4_3')==='B' && getVal('q4_4')==='B') score += 8;
-        if (getVal('q9_1')==='B' && getVal('q9_2')==='B' && getVal('q9_3')==='S' && getVal('q9_4')==='S') score += 8;
-        if (getVal('q12_1')==='B' && getVal('q12_2')==='S' && getVal('q12_3')==='B' && getVal('q12_4')==='B') score += 8;
-        if (getVal('q15_1')==='B' && getVal('q15_2')==='B' && getVal('q15_3')==='S' && getVal('q15_4')==='S') score += 8;
+    if (document.querySelector('input[name="q7"]:checked')?.value === 'D')
+        score += 3;
 
-        return score;
+    if (document.querySelector('input[name="q10"]:checked')?.value === 'A')
+        score += 3;
+
+    if (document.querySelector('input[name="q13"]:checked')?.value === 'B')
+        score += 3;
+
+    if (document.querySelector('input[name="q14"]:checked')?.value === 'C')
+        score += 3;
+
+    if (document.querySelector('input[name="q16"]:checked')?.value === 'D')
+        score += 3;
+
+    if (document.querySelector('input[name="q17"]:checked')?.value === 'B')
+        score += 3;
+
+    if (document.querySelector('input[name="q18"]:checked')?.value === 'C')
+        score += 3;
+
+
+    /* PG KOMPLEKS TIPE 1 */
+
+    const getChecked = (name) =>
+        Array.from(
+            document.querySelectorAll(`input[name="${name}"]:checked`)
+        ).map(c => c.value);
+
+
+    /* Q2 = A-B */
+    const q2 = getChecked('q2');
+
+    if (
+        q2.includes('A') &&
+        q2.includes('B') &&
+        q2.length === 2
+    ) {
+        score += 6;
     }
 
-    function showResult(elemId, isCorrect, text) {
-        const fb = document.getElementById(elemId);
-        fb.style.display = "block";
-        const currentScore = getCurrentTotalScore();
-        const scoreBadge = `<br><span class="score-badge">📊 Total Skor Sementara: ${currentScore} / 100</span>`;
-        
-        if (isCorrect) {
-            fb.className = "feedback correct";
-            fb.innerHTML = "<b>Benar! 🎉</b> " + text + scoreBadge;
-        } else {
-            fb.className = "feedback incorrect";
-            fb.innerHTML = "<b>Kurang Tepat! ❌</b> " + text + scoreBadge;
-        }
+
+    /* Q8 = B-C */
+    const q8 = getChecked('q8');
+
+    if (
+        q8.includes('B') &&
+        q8.includes('C') &&
+        q8.length === 2
+    ) {
+        score += 6;
     }
 
-    function checkQ1() {
-        const q = document.querySelector('input[name="q1"]:checked');
-        if (!q) return alert("Pilih salah satu jawaban terlebih dahulu!");
-        showResult('fb-q1', q.value === 'C', "Ide pokok adalah gagasan atau inti utama dalam sebuah cerita/paragraf.");
+
+    /* Q11 = C-D */
+    const q11 = getChecked('q11');
+
+    if (
+        q11.includes('C') &&
+        q11.includes('D') &&
+        q11.length === 2
+    ) {
+        score += 6;
     }
 
-    function checkQ2() {
-        const checked = Array.from(document.querySelectorAll('input[name="q2"]:checked')).map(c => c.value);
-        if (checked.length === 0) return alert("Pilihlah jawaban terlebih dahulu!");
-        const isCorrect = checked.includes('B') && checked.includes('C') && checked.length === 2;
-        showResult('fb-q2', isCorrect, "Jawaban yang benar adalah B dan C.");
+
+    /* Q19 = A-D */
+    const q19 = getChecked('q19');
+
+    if (
+        q19.includes('A') &&
+        q19.includes('D') &&
+        q19.length === 2
+    ) {
+        score += 6;
     }
 
-    function checkQ3() {
-        const r1 = document.querySelector('input[name="q3_1"]:checked');
-        const r2 = document.querySelector('input[name="q3_2"]:checked');
-        const r3 = document.querySelector('input[name="q3_3"]:checked');
-        const r4 = document.querySelector('input[name="q3_4"]:checked');
-        if (!r1 || !r2 || !r3 || !r4) return alert("Jawab semua poin tabel Benar/Salah!");
-        const ok = r1.value === 'B' && r2.value === 'B' && r3.value === 'S' && r4.value === 'S';
-        showResult('fb-q3', ok, "Kunci: 1-Benar, 2-Benar, 3-Salah, 4-Salah.");
+
+    /* Q20 = A-C-D */
+    const q20 = getChecked('q20');
+
+    if (
+        q20.includes('A') &&
+        q20.includes('C') &&
+        q20.includes('D') &&
+        q20.length === 3
+    ) {
+        score += 6;
     }
 
-    function checkQ4() {
-        const r1 = document.querySelector('input[name="q4_1"]:checked');
-        const r2 = document.querySelector('input[name="q4_2"]:checked');
-        const r3 = document.querySelector('input[name="q4_3"]:checked');
-        const r4 = document.querySelector('input[name="q4_4"]:checked');
-        if (!r1 || !r2 || !r3 || !r4) return alert("Jawab semua poin tabel Benar/Salah!");
-        const ok = r1.value === 'S' && r2.value === 'S' && r3.value === 'B' && r4.value === 'B';
-        showResult('fb-q4', ok, "Kunci: 1-Salah, 2-Salah, 3-Benar, 4-Benar.");
+
+    /* PG KOMPLEKS TIPE 2 */
+
+    const getVal = (name) =>
+        document.querySelector(`input[name="${name}"]:checked`)?.value;
+
+
+    /* Q3 */
+    if (
+        getVal('q3_1') === 'B' &&
+        getVal('q3_2') === 'B' &&
+        getVal('q3_3') === 'S' &&
+        getVal('q3_4') === 'S'
+    ) {
+        score += 8;
     }
 
-    function checkQ5() {
-        const q = document.querySelector('input[name="q5"]:checked');
-        if (!q) return alert("Pilih jawabanmu!");
-        showResult('fb-q5', q.value === 'D', "Tanda titik di akhir kalimat berguna untuk mengakhiri kalimat berita.");
+
+    /* Q4 */
+    if (
+        getVal('q4_1') === 'S' &&
+        getVal('q4_2') === 'S' &&
+        getVal('q4_3') === 'B' &&
+        getVal('q4_4') === 'B'
+    ) {
+        score += 8;
     }
 
-    function checkQ6() {
-        const q = document.querySelector('input[name="q6"]:checked');
-        if (!q) return alert("Pilih jawabanmu!");
-        showResult('fb-q6', q.value === 'C', "Tanda koma dipakai memisahkan rincian barang.");
+
+    /* Q9 */
+    if (
+        getVal('q9_1') === 'B' &&
+        getVal('q9_2') === 'B' &&
+        getVal('q9_3') === 'S' &&
+        getVal('q9_4') === 'S'
+    ) {
+        score += 8;
     }
 
-    function checkQ7() {
-        const q = document.querySelector('input[name="q7"]:checked');
-        if (!q) return alert("Pilih jawabanmu!");
-        showResult('fb-q7', q.value === 'C', "Kalimat 'Tolong tutupkan...' adalah kalimat perintah, sehingga harus diakhiri tanda seru (!), bukan tanda tanya (?).");
+
+    /* Q12 */
+    if (
+        getVal('q12_1') === 'B' &&
+        getVal('q12_2') === 'S' &&
+        getVal('q12_3') === 'B' &&
+        getVal('q12_4') === 'B'
+    ) {
+        score += 8;
     }
 
-    function checkQ8() {
-        const checked = Array.from(document.querySelectorAll('input[name="q8"]:checked')).map(c => c.value);
-        if (checked.length === 0) return alert("Pilih jawabanmu terlebih dahulu!");
-        const ok = checked.includes('B') && checked.includes('C') && checked.length === 2;
-        showResult('fb-q8', ok, "Jawaban yang benar adalah B dan C.");
+
+    /* Q15 */
+    if (
+        getVal('q15_1') === 'B' &&
+        getVal('q15_2') === 'B' &&
+        getVal('q15_3') === 'S' &&
+        getVal('q15_4') === 'S'
+    ) {
+        score += 8;
     }
 
-    function checkQ9() {
-        const r1 = document.querySelector('input[name="q9_1"]:checked');
-        const r2 = document.querySelector('input[name="q9_2"]:checked');
-        const r3 = document.querySelector('input[name="q9_3"]:checked');
-        const r4 = document.querySelector('input[name="q9_4"]:checked');
-        if (!r1 || !r2 || !r3 || !r4) return alert("Jawab seluruh baris tabel!");
-        const ok = r1.value === 'B' && r2.value === 'B' && r3.value === 'S' && r4.value === 'S';
-        showResult('fb-q9', ok, "Kunci: 1-Benar, 2-Benar, 3-Salah, 4-Salah.");
-    }
+    return score;
+}
 
-    function checkQ10() {
-        const q = document.querySelector('input[name="q10"]:checked');
-        if (!q) return alert("Pilih jawabanmu!");
-        showResult('fb-q10', q.value === 'C', "Kata ulang baku murni yang tepat memakai tanda hubung adalah 'kupu-kupu' (1) dan 'sepoi-sepoi' (2).");
-    }
 
-    function checkQ11() {
-        const checked = Array.from(document.querySelectorAll('input[name="q11"]:checked')).map(c => c.value);
-        if (checked.length === 0) return alert("Pilih jawabanmu terlebih dahulu!");
-        const ok = checked.includes('C') && checked.includes('D') && checked.length === 2;
-        showResult('fb-q11', ok, "Jawaban yang benar adalah C dan D (kalimat 1 dan 3).");
-    }
+/* =========================================================
+   FEEDBACK
+   ========================================================= */
 
-    function checkQ12() {
-        const r1 = document.querySelector('input[name="q12_1"]:checked');
-        const r2 = document.querySelector('input[name="q12_2"]:checked');
-        const r3 = document.querySelector('input[name="q12_3"]:checked');
-        const r4 = document.querySelector('input[name="q12_4"]:checked');
-        if (!r1 || !r2 || !r3 || !r4) return alert("Jawab seluruh baris tabel!");
-        const ok = r1.value === 'B' && r2.value === 'S' && r3.value === 'B' && r4.value === 'B';
-        showResult('fb-q12', ok, "Kunci: 1-Benar (Lani=S), 2-Salah (menggambar=P), 3-Benar (pemandangan=O), 4-Benar (di ruang tamu=K).");
-    }
+function showResult(elemId, isCorrect, text) {
 
-    function checkQ13() {
-        const q = document.querySelector('input[name="q13"]:checked');
-        if (!q) return alert("Pilih jawabanmu!");
-        showResult('fb-q13', q.value === 'C', "Kalimat efektif tersusun hemat kata, jelas, serta logis bagi pembaca.");
-    }
+    const fb = document.getElementById(elemId);
 
-    function checkQ14() {
-        const q = document.querySelector('input[name="q14"]:checked');
-        if (!q) return alert("Pilih jawabanmu!");
-        showResult('fb-q14', q.value === 'B', "Kalimat B (Siswa kelas 3 sangat rajin belajar di perpustakaan) ringkas dan bebas pemborosan kata.");
-    }
+    fb.style.display = "block";
 
-    function checkQ15() {
-        const r1 = document.querySelector('input[name="q15_1"]:checked');
-        const r2 = document.querySelector('input[name="q15_2"]:checked');
-        const r3 = document.querySelector('input[name="q15_3"]:checked');
-        const r4 = document.querySelector('input[name="q15_4"]:checked');
-        if (!r1 || !r2 || !r3 || !r4) return alert("Jawab seluruh baris tabel!");
-        const ok = r1.value === 'B' && r2.value === 'B' && r3.value === 'S' && r4.value === 'S';
-        showResult('fb-q15', ok, "Kunci: 1-Benar, 2-Benar, 3-Salah, 4-Salah.");
-    }
+    const currentScore = getCurrentTotalScore();
 
-    function checkQ16() {
-        const q = document.querySelector('input[name="q16"]:checked');
-        if (!q) return alert("Pilih jawabanmu!");
-        showResult('fb-q16', q.value === 'D', "Penggunaan huruf kapital yang tepat: awal kalimat ('Paman'), nama orang ('Dedi'), nama kota ('Kota Bandung'), hari ('Rabu'), dan bulan ('Oktober').");
-    }
+    const scoreBadge =
+        `<br><span class="score-badge">
+            📊 Total Skor Sementara: ${currentScore} / 100
+        </span>`;
 
-    function checkQ17() {
-        const q = document.querySelector('input[name="q17"]:checked');
-        if (!q) return alert("Pilih jawabanmu!");
-        showResult('fb-q17', q.value === 'C', "Pasangan baku-tidak baku yang tepat adalah 1 (Apotek-Apotik) dan 3 (Cabai-Cabe).");
-    }
+    if (isCorrect) {
 
-    function checkQ18() {
-        const q = document.querySelector('input[name="q18"]:checked');
-        if (!q) return alert("Pilih jawabanmu!");
-        showResult('fb-q18', q.value === 'C', "Kata 'Mengapa' menanyakan alasan.");
-    }
+        fb.className = "feedback correct";
 
-    function checkQ19() {
-        const checked = Array.from(document.querySelectorAll('input[name="q19"]:checked')).map(c => c.value);
-        if (checked.length === 0) return alert("Pilih jawabanmu terlebih dahulu!");
-        const ok = checked.includes('B') && checked.includes('D') && checked.length === 2;
-        showResult('fb-q19', ok, "Jawaban yang benar adalah B dan D.");
-    }
+        fb.innerHTML =
+            "<b>Benar! 🎉</b> " +
+            text +
+            scoreBadge;
 
-    function checkQ20() {
-        const checked = Array.from(document.querySelectorAll('input[name="q20"]:checked')).map(c => c.value);
-        if (checked.length === 0) return alert("Pilih jawabanmu terlebih dahulu!");
-        const ok = checked.includes('B') && checked.includes('C') && checked.length === 2;
-        showResult('fb-q20', ok, "Jawaban yang benar adalah B dan C.");
-    }
+    } else {
 
-    function calculateTotalScore() {
-        const finalScore = getCurrentTotalScore();
-        const scoreBox = document.getElementById('final-score-box');
-        scoreBox.style.display = 'block';
-        scoreBox.innerHTML = `Skor Akhir Kamu: <span style="color: #059669;">${finalScore} / 100</span>`;
+        fb.className = "feedback incorrect";
+
+        fb.innerHTML =
+            "<b>Kurang Tepat! ❌</b> " +
+            text +
+            scoreBadge;
     }
+}
+
+
+/* =========================================================
+   CHECK JAWABAN
+   ========================================================= */
+
+function checkQ1() {
+
+    const q = document.querySelector('input[name="q1"]:checked');
+
+    if (!q)
+        return alert("Pilih salah satu jawaban terlebih dahulu!");
+
+    showResult(
+        'fb-q1',
+        q.value === 'A',
+        "Ide pokok adalah gagasan atau inti utama dalam sebuah cerita/paragraf."
+    );
+}
+
+
+function checkQ2() {
+
+    const checked = Array.from(
+        document.querySelectorAll('input[name="q2"]:checked')
+    ).map(c => c.value);
+
+    if (checked.length === 0)
+        return alert("Pilihlah jawaban terlebih dahulu!");
+
+    const isCorrect =
+        checked.includes('A') &&
+        checked.includes('B') &&
+        checked.length === 2;
+
+    showResult(
+        'fb-q2',
+        isCorrect,
+        "Jawaban yang benar adalah A dan B."
+    );
+}
+
+
+function checkQ3() {
+
+    const r1 = document.querySelector('input[name="q3_1"]:checked');
+    const r2 = document.querySelector('input[name="q3_2"]:checked');
+    const r3 = document.querySelector('input[name="q3_3"]:checked');
+    const r4 = document.querySelector('input[name="q3_4"]:checked');
+
+    if (!r1 || !r2 || !r3 || !r4)
+        return alert("Jawab semua poin tabel Benar/Salah!");
+
+    const ok =
+        r1.value === 'B' &&
+        r2.value === 'B' &&
+        r3.value === 'S' &&
+        r4.value === 'S';
+
+    showResult(
+        'fb-q3',
+        ok,
+        "Kunci: 1-Benar, 2-Benar, 3-Salah, 4-Salah."
+    );
+}
+
+
+function checkQ4() {
+
+    const r1 = document.querySelector('input[name="q4_1"]:checked');
+    const r2 = document.querySelector('input[name="q4_2"]:checked');
+    const r3 = document.querySelector('input[name="q4_3"]:checked');
+    const r4 = document.querySelector('input[name="q4_4"]:checked');
+
+    if (!r1 || !r2 || !r3 || !r4)
+        return alert("Jawab semua poin tabel Benar/Salah!");
+
+    const ok =
+        r1.value === 'S' &&
+        r2.value === 'S' &&
+        r3.value === 'B' &&
+        r4.value === 'B';
+
+    showResult(
+        'fb-q4',
+        ok,
+        "Kunci: 1-Salah, 2-Salah, 3-Benar, 4-Benar."
+    );
+}
+
+
+function checkQ5() {
+
+    const q = document.querySelector('input[name="q5"]:checked');
+
+    if (!q)
+        return alert("Pilih jawabanmu!");
+
+    showResult(
+        'fb-q5',
+        q.value === 'B',
+        "Tanda titik di akhir kalimat berguna untuk mengakhiri kalimat berita."
+    );
+}
+
+
+function checkQ6() {
+
+    const q = document.querySelector('input[name="q6"]:checked');
+
+    if (!q)
+        return alert("Pilih jawabanmu!");
+
+    showResult(
+        'fb-q6',
+        q.value === 'C',
+        "Tanda koma dipakai untuk memisahkan unsur-unsur pemerincian."
+    );
+}
+
+
+function checkQ7() {
+
+    const q = document.querySelector('input[name="q7"]:checked');
+
+    if (!q)
+        return alert("Pilih jawabanmu!");
+
+    showResult(
+        'fb-q7',
+        q.value === 'D',
+        "Kalimat tersebut merupakan kalimat perintah sehingga seharusnya menggunakan tanda seru (!), bukan tanda tanya (?)."
+    );
+}
+
+
+function checkQ8() {
+
+    const checked = Array.from(
+        document.querySelectorAll('input[name="q8"]:checked')
+    ).map(c => c.value);
+
+    if (checked.length === 0)
+        return alert("Pilih jawabanmu terlebih dahulu!");
+
+    const ok =
+        checked.includes('B') &&
+        checked.includes('C') &&
+        checked.length === 2;
+
+    showResult(
+        'fb-q8',
+        ok,
+        "Jawaban yang benar adalah B dan C."
+    );
+}
+
+
+function checkQ9() {
+
+    const r1 = document.querySelector('input[name="q9_1"]:checked');
+    const r2 = document.querySelector('input[name="q9_2"]:checked');
+    const r3 = document.querySelector('input[name="q9_3"]:checked');
+    const r4 = document.querySelector('input[name="q9_4"]:checked');
+
+    if (!r1 || !r2 || !r3 || !r4)
+        return alert("Jawab seluruh baris tabel!");
+
+    const ok =
+        r1.value === 'B' &&
+        r2.value === 'B' &&
+        r3.value === 'S' &&
+        r4.value === 'S';
+
+    showResult(
+        'fb-q9',
+        ok,
+        "Kunci: 1-Benar, 2-Benar, 3-Salah, 4-Salah."
+    );
+}
+
+
+function checkQ10() {
+
+    const q = document.querySelector('input[name="q10"]:checked');
+
+    if (!q)
+        return alert("Pilih jawabanmu!");
+
+    showResult(
+        'fb-q10',
+        q.value === 'A',
+        "Kata ulang murni yang tepat menggunakan tanda hubung adalah 'kupu-kupu' dan 'sepoi-sepoi'."
+    );
+}
+
+
+function checkQ11() {
+
+    const checked = Array.from(
+        document.querySelectorAll('input[name="q11"]:checked')
+    ).map(c => c.value);
+
+    if (checked.length === 0)
+        return alert("Pilih jawabanmu terlebih dahulu!");
+
+    const ok =
+        checked.includes('C') &&
+        checked.includes('D') &&
+        checked.length === 2;
+
+    showResult(
+        'fb-q11',
+        ok,
+        "Jawaban yang benar adalah C dan D (kalimat 1 dan 3)."
+    );
+}
+
+
+function checkQ12() {
+
+    const r1 = document.querySelector('input[name="q12_1"]:checked');
+    const r2 = document.querySelector('input[name="q12_2"]:checked');
+    const r3 = document.querySelector('input[name="q12_3"]:checked');
+    const r4 = document.querySelector('input[name="q12_4"]:checked');
+
+    if (!r1 || !r2 || !r3 || !r4)
+        return alert("Jawab seluruh baris tabel!");
+
+    const ok =
+        r1.value === 'B' &&
+        r2.value === 'S' &&
+        r3.value === 'B' &&
+        r4.value === 'B';
+
+    showResult(
+        'fb-q12',
+        ok,
+        "Kunci: 1-Benar, 2-Salah, 3-Benar, 4-Benar."
+    );
+}
+
+
+function checkQ13() {
+
+    const q = document.querySelector('input[name="q13"]:checked');
+
+    if (!q)
+        return alert("Pilih jawabanmu!");
+
+    showResult(
+        'fb-q13',
+        q.value === 'B',
+        "Kalimat efektif tersusun hemat kata, jelas, serta logis."
+    );
+}
+
+
+function checkQ14() {
+
+    const q = document.querySelector('input[name="q14"]:checked');
+
+    if (!q)
+        return alert("Pilih jawabanmu!");
+
+    showResult(
+        'fb-q14',
+        q.value === 'C',
+        "Kalimat C ringkas dan bebas dari pemborosan kata."
+    );
+}
+
+
+function checkQ15() {
+
+    const r1 = document.querySelector('input[name="q15_1"]:checked');
+    const r2 = document.querySelector('input[name="q15_2"]:checked');
+    const r3 = document.querySelector('input[name="q15_3"]:checked');
+    const r4 = document.querySelector('input[name="q15_4"]:checked');
+
+    if (!r1 || !r2 || !r3 || !r4)
+        return alert("Jawab seluruh baris tabel!");
+
+    const ok =
+        r1.value === 'B' &&
+        r2.value === 'B' &&
+        r3.value === 'S' &&
+        r4.value === 'S';
+
+    showResult(
+        'fb-q15',
+        ok,
+        "Kunci: 1-Benar, 2-Benar, 3-Salah, 4-Salah."
+    );
+}
+
+
+function checkQ16() {
+
+    const q = document.querySelector('input[name="q16"]:checked');
+
+    if (!q)
+        return alert("Pilih jawabanmu!");
+
+    showResult(
+        'fb-q16',
+        q.value === 'D',
+        "Huruf kapital digunakan pada awal kalimat, nama orang, nama geografis, nama hari, dan nama bulan."
+    );
+}
+
+
+function checkQ17() {
+
+    const q = document.querySelector('input[name="q17"]:checked');
+
+    if (!q)
+        return alert("Pilih jawabanmu!");
+
+    showResult(
+        'fb-q17',
+        q.value === 'B',
+        "Pasangan baku-tidak baku yang tepat adalah nomor 1 dan 3."
+    );
+}
+
+
+function checkQ18() {
+
+    const q = document.querySelector('input[name="q18"]:checked');
+
+    if (!q)
+        return alert("Pilih jawabanmu!");
+
+    showResult(
+        'fb-q18',
+        q.value === 'C',
+        "Kata 'mengapa' digunakan untuk menanyakan alasan."
+    );
+}
+
+
+function checkQ19() {
+
+    const checked = Array.from(
+        document.querySelectorAll('input[name="q19"]:checked')
+    ).map(c => c.value);
+
+    if (checked.length === 0)
+        return alert("Pilih jawabanmu terlebih dahulu!");
+
+    const ok =
+        checked.includes('A') &&
+        checked.includes('D') &&
+        checked.length === 2;
+
+    showResult(
+        'fb-q19',
+        ok,
+        "Jawaban yang benar adalah A dan D."
+    );
+}
+
+
+function checkQ20() {
+
+    const checked = Array.from(
+        document.querySelectorAll('input[name="q20"]:checked')
+    ).map(c => c.value);
+
+    if (checked.length === 0)
+        return alert("Pilih jawabanmu terlebih dahulu!");
+
+    const ok =
+        checked.includes('A') &&
+        checked.includes('C') &&
+        checked.includes('D') &&
+        checked.length === 3;
+
+    showResult(
+        'fb-q20',
+        ok,
+        "Jawaban yang benar adalah A, C, dan D."
+    );
+}
+
+
+/* =========================================================
+   SKOR AKHIR
+   ========================================================= */
+
+function calculateTotalScore() {
+
+    const finalScore = getCurrentTotalScore();
+
+    const scoreBox =
+        document.getElementById('final-score-box');
+
+    scoreBox.style.display = 'block';
+
+    scoreBox.innerHTML =
+        `Skor Akhir Kamu:
+        <span style="color:#059669;">
+            ${finalScore} / 100
+        </span>`;
+}
+
 </script>
 
 </body>
